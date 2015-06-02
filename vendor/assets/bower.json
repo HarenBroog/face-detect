@@ -1,0 +1,6 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "clmtrackr.js": "git://github.com/auduno/clmtrackr#dev"
+  }
+}

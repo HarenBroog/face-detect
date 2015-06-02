@@ -1,0 +1,28 @@
+.container
+  .row
+    .col-sm-8
+      .video.well
+        %video#video{:autoplay => "", :height => "480", :width => "640"}
+        %canvas#canvas{:height => "480", :width => "640"}
+      %p#positions
+      .well
+        .form-group
+          %label{:for => "name"} Imię
+          %input#name
+        .btn-group{"aria-label" => "...", :role => "group"}
+          %button.btn.btn-default#save Zapisz swoją twarz
+          %button.btn.btn-default#verify Sprawdź kim jesteś
+    .col-sm-4.well
+      %section
+        .h2 Instrukcja
+      %section
+        .h3 Zapisywanie wzorców
+        %p Aby zapisać nową osobę w bazie danych należy, wpisać jej imię w polu "Imię", poczekać aż program dobrze złapie kontrur twarzy oraz wcisnąć 5 razy przycisk "Zapisz swoją twarz". Zdjęcia nie powinny zbytnia się różnić - algorytm porównuje średnie odleglości pewnych punktów na twarzy.
+      %section
+        .h3 Uwierzytelnianie
+        %p Poczekaj aż program namierzy kontur twarzy, naciśnij przycisk "Sprawdź kim jestem" - program odszuka w bazie danych osobę która najbardziej pasuje do pobranego modelu twarzy
+      %section
+        .h3 Opis biblioteki
+        .h4= link_to 'https://github.com/auduno/clmtrackr'
+        .h3 Model twarzy
+        = image_tag 'https://camo.githubusercontent.com/1c0305c69fe89f8def8cdad1cefedec9627a22eb/687474703a2f2f617564756e6f2e6769746875622e636f6d2f636c6d747261636b722f6d656469612f666163656d6f64656c5f6e756d626572696e675f6e65775f736d616c6c2e706e67'

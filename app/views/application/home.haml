@@ -1,5 +1,20 @@
 .container#main
   .row
+    .col-sm-12
+      .h1 Aplikacja "Face Detect"
+      %section
+        .h2 Autorzy:
+        .h3.row
+          .col-sm-3
+            = mail_to "damian.romanow@gmail.com", 'Damian Romanów'
+          .col-sm-3
+            = link_to "https://github.com/HarenBroog", "HarenBroog"
+        .h3.row
+          .col-sm-3
+            = mail_to "vexhelel@gmail.com", 'Adam Skołuda'
+          .col-sm-3
+            = link_to "https://github.com/Skoda091", "Skoda091"
+  .row
     .col-sm-8
       .video.well
         .video-and-canvas

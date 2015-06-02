@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: face_detect_production
   username: face_detect
   password: <%= ENV['FACE_DETECT_DATABASE_PASSWORD'] %>

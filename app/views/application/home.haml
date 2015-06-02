@@ -1,4 +1,4 @@
-.container
+.container#main
   .row
     .col-sm-8
       .video.well
@@ -27,3 +27,10 @@
         .h4= link_to 'https://github.com/auduno/clmtrackr'
         .h3 Model twarzy
         = image_tag 'https://camo.githubusercontent.com/1c0305c69fe89f8def8cdad1cefedec9627a22eb/687474703a2f2f617564756e6f2e6769746875622e636f6d2f636c6d747261636b722f6d656469612f666163656d6f64656c5f6e756d626572696e675f6e65775f736d616c6c2e706e67'
+#footer
+  .container
+    %p.text-muted.credit
+      Created by
+      = mail_to "damian.romanow@gmail.com", 'Damian Romanów'
+      and
+      = mail_to "vexhelel@gmail.com", 'Adam Skołuda'

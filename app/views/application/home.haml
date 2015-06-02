@@ -2,8 +2,9 @@
   .row
     .col-sm-8
       .video.well
-        %video#video{:autoplay => "", :height => "480", :width => "640"}
-        %canvas#canvas{:height => "480", :width => "640"}
+        .video-and-canvas
+          %video#video{:autoplay => "", :height => "480", :width => "640"}
+          %canvas#canvas{:height => "480", :width => "640"}
       %p#positions
       .well
         .form-group
